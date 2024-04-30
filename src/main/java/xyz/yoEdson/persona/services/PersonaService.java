@@ -102,7 +102,7 @@ public class PersonaService implements PersonaRepository {
 
     @Override
     public <S extends Persona> S save(S entity) {
-        return null;
+        return personaRepository.save(entity);
     }
 
     @Override
@@ -112,7 +112,7 @@ public class PersonaService implements PersonaRepository {
 
     @Override
     public Optional<Persona> findById(Long aLong) {
-        return Optional.empty();
+        return personaRepository.findById(aLong);
     }
 
     @Override
@@ -122,7 +122,7 @@ public class PersonaService implements PersonaRepository {
 
     @Override
     public List<Persona> findAll() {
-        return null;
+        return personaRepository.findAll();
     }
 
     @Override
@@ -137,7 +137,7 @@ public class PersonaService implements PersonaRepository {
 
     @Override
     public void deleteById(Long aLong) {
-
+        personaRepository.deleteById(aLong);
     }
 
     @Override
